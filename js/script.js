@@ -6,17 +6,9 @@ let computerMove = "nieznany ruch";
 
 if (randomNumber == 1) {
   computerMove = "kamień";
-}
-
-printMessage("Mój ruch to: " + computerMove);
-
-if (randomNumber == 2) {
+} else if (randomNumber == 2) {
   computerMove = "papier";
-}
-
-printMessage("Mój ruch to: " + computerMove);
-
-if (randomNumber == 3) {
+} else if (randomNumber == 3) {
   computerMove = "nożyce";
 }
 
@@ -30,17 +22,9 @@ let playerMove = "nieznany ruch";
 
 if (playerInput == "1") {
   playerMove = "kamień";
-}
-
-printMessage("Twój ruch to: " + playerMove);
-
-if (playerInput == "2") {
+} else if (playerInput == "2") {
   playerMove = "papier";
-}
-
-printMessage("Twój ruch to: " + playerMove);
-
-if (playerInput == "3") {
+} else if (playerInput == "3") {
   playerMove = "nożyce";
 }
 
