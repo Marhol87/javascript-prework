@@ -77,4 +77,13 @@ function playGame(playerInput) {
 
   displayResult(computerMove, playerMove);
 }
+document.getElementById('play-rock').addEventListener('click', function(playerInput){
+  playGame(1);
+});
+document.getElementById('play-paper').addEventListener('click', function(playerInputa){
+  playGame(2);
+});
+document.getElementById('play-scissors').addEventListener('click', function(playerInput){
+  playGame(3);
+});
 
