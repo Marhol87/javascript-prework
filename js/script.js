@@ -4,16 +4,7 @@ const SCISSORS = "nożyce";
 const UNKNOWN = "nieznany ruch";
 
 function playGame(playerInput) {
-  if (playerInput == 1) {
-    return STONE;
-  } else if (playerInput == 2) {
-    return PAPER;
-  } else if (playerInput == 3) {
-    return SCISSORS;
-  }
-
-  function clearMessages();{}
-
+  clearMessages();
   function getMoveName(randomNumber) {
     if (randomNumber == 1) {
       return STONE;
@@ -77,13 +68,18 @@ function playGame(playerInput) {
 
   displayResult(computerMove, playerMove);
 }
-document.getElementById('play-rock').addEventListener('click', function(playerInput){
-  playGame(1);
-});
-document.getElementById('play-paper').addEventListener('click', function(playerInputa){
-  playGame(2);
-});
-document.getElementById('play-scissors').addEventListener('click', function(playerInput){
-  playGame(3);
-});
-
+document
+  .getElementById("play-rock")
+  .addEventListener("click", function (playerInput) {
+    playGame(1);
+  });
+document
+  .getElementById("play-paper")
+  .addEventListener("click", function (playerInputa) {
+    playGame(2);
+  });
+document
+  .getElementById("play-scissors")
+  .addEventListener("click", function (playerInput) {
+    playGame(3);
+  });
