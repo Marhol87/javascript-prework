@@ -4,9 +4,9 @@ const SCISSORS = "nożyce";
 const UNKNOWN = "nieznany ruch";
 
 {
-  function playGame(playerInput) {
+  const playGame = function (playerInput) {
     clearMessages();
-    function getMoveName(randomNumber) {
+    const getMoveName = function (randomNumber) {
       if (randomNumber == 1) {
         return STONE;
       } else if (randomNumber == 2) {
@@ -15,7 +15,7 @@ const UNKNOWN = "nieznany ruch";
         return SCISSORS;
       }
       return UNKNOWN;
-    }
+    };
     const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log("Wylosowana liczba to: " + randomNumber);
@@ -64,7 +64,7 @@ const UNKNOWN = "nieznany ruch";
     }
 
     displayResult(computerMove, playerMove);
-  }
+  };
   document
     .getElementById("play-rock")
     .addEventListener("click", function (playerInput) {
